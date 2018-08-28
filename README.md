@@ -11,11 +11,17 @@
   ```
   $ npm init
   ```
-2. express-generator 설치
+3. express-generator 설치
   ```
   $ npm install express-generator -g
   ```
-3. express project 생성
+4. express 설치 및 폴더 생성
   ```
   $ express messenger-back
   ```
+5. 현 프로젝트에 express 설치
+  ```
+  $ express
+  ```
+  
+
