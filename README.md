@@ -17,7 +17,7 @@
   ```
 4. express 설치 및 폴더 생성
   ```
-  $ express messenger-back
+  $ express 폴더명
   ```
 5. 현 프로젝트에 express 설치
   ```
