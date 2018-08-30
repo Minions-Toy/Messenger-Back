@@ -22,6 +22,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : '< MySQL username >',
+  password : '< MySQL password >',
+  port     : < port >,
+  database : 'my_db'
+});
+
+// connection.connect();
+//
+// connection.query('SELECT * from Persons', function(err, rows, fields) {
+//   if (!err)
+//     console.log('The solution is: ', rows);
+//   else
+//     console.log('Error while performing Query.', err);
+// });
+
+// connection.end();
+
 // PORT 리스너
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
