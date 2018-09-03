@@ -56,7 +56,12 @@
 > IAM 활용한 안전한 리소스 액세스 설정 (로그인 및 권한) (https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/introduction.html)
 > sql tool 활용하여 DB내 테이블 및 컬 설정 (관계형)
 
-
-### 웹소켓
+<!---
+### 웹소켓 (2018.08.29 'WEBRTC'기능으로 변경)
 > 웹소켓이란 : http://victorydntmd.tistory.com/250
 > 웹소켓 가이드 : https://www.zerocho.com/category/NodeJS/post/57df854f5f0b02001505fef2
+--->
+
+### WEBRTC
+> WEBRTC : https://webrtclab.herokuapp.com/
+> 예제코드 : https://webrtclab.herokuapp.com/get-user-media/
