@@ -1,7 +1,44 @@
 # Messenger-Back
 
 ## ERD - update 18.09.03
-![image](https://user-images.githubusercontent.com/26675063/44984534-153d9200-afb8-11e8-94d8-9582e3fc1db0.png)
+![image](https://user-images.githubusercontent.com/26675063/44985613-e5908900-afbb-11e8-8cd2-c79187116bbc.png)
+- TABLE_USER_INFO : 사용자 정보 테이블
+ - P_ID : 사용자 고유 PK
+ - USER_ID : 사용자 계정 ID
+ - USER_PW : 사용자 비밀번호 
+ - USER_NICK : 사용자 닉네임
+ - USER_STATE : 사용자 활성화 여부
+ 
+<br> 
+ 
+- TABLE_CHATTING_ROOM : 채팅방 테이블
+ - C_ID : 채팅방 고유 PK
+ - CREATE_DATE : 채팅방 생성 날짜
+ - LAST_UPDATED : 마지막으로 보낸 메시지 날짜
+ - ROOM_NAME : 채팅방 이름
+
+<br>
+
+- TABLE_PARTICIPANT : 참여자 정보 테이블
+ - P_ID (FK_P_ID_PARTICIPANT) : USER_INFO 테이블 조인 외래키(FK)
+ - C_ID (FK_C_ID_PARTICIPANT) : CHATTING_ROOM 테이블 조인 외래키(FK)
+ - JOIN_DATE : 채팅방에 참여를 시작한 날짜
+ - SEEN_DATE : 참여자가 채팅방에서 마지막으로 채팅을 본 날짜
+
+<br>
+
+- TABLE_MESSAGE : 메시지 테이블
+ - M_ID : 메시지 고유 PK
+ - C_ID (FK_C_ID_MESSAGE) : CHATTING_ROOM 테이블 조인 외래키(FK)
+ - P_ID (FK_P_ID_MESSAGE) : USER_INFO 테이블 조인 외래키(FK)
+ - CONTENT : 메시지 내용
+ - REG_DATE : 메시지 전송 날짜
+ 
+* * *
+### window cmd에서 RDS 인스턴스 원격 접속하는 방법
+mysql -h서버주소 -u아이디 -p패스워드<br>
+ex)<br>
+mysql -hrds-test.lkafj1kl2j3dkd.ap-southeast-1.rds.amazonaws.com -uroot -p1234
 
 * * *
 0828
