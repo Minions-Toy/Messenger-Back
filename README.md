@@ -2,7 +2,8 @@
 
 ## ERD - update 18.09.03
 ![image](https://user-images.githubusercontent.com/26675063/44985613-e5908900-afbb-11e8-8cd2-c79187116bbc.png)
-- TABLE_USER_INFO : 사용자 정보 테이블
+
+>TABLE_USER_INFO : 사용자 정보 테이블
  - P_ID : 사용자 고유 PK
  - USER_ID : 사용자 계정 ID
  - USER_PW : 사용자 비밀번호 
@@ -11,7 +12,7 @@
  
 <br> 
  
-- TABLE_CHATTING_ROOM : 채팅방 테이블
+>TABLE_CHATTING_ROOM : 채팅방 테이블
  - C_ID : 채팅방 고유 PK
  - CREATE_DATE : 채팅방 생성 날짜
  - LAST_UPDATED : 마지막으로 보낸 메시지 날짜
@@ -19,7 +20,7 @@
 
 <br>
 
-- TABLE_PARTICIPANT : 참여자 정보 테이블
+>TABLE_PARTICIPANT : 참여자 정보 테이블
  - P_ID (FK_P_ID_PARTICIPANT) : USER_INFO 테이블 조인 외래키(FK)
  - C_ID (FK_C_ID_PARTICIPANT) : CHATTING_ROOM 테이블 조인 외래키(FK)
  - JOIN_DATE : 채팅방에 참여를 시작한 날짜
@@ -27,7 +28,7 @@
 
 <br>
 
-- TABLE_MESSAGE : 메시지 테이블
+>TABLE_MESSAGE : 메시지 테이블
  - M_ID : 메시지 고유 PK
  - C_ID (FK_C_ID_MESSAGE) : CHATTING_ROOM 테이블 조인 외래키(FK)
  - P_ID (FK_P_ID_MESSAGE) : USER_INFO 테이블 조인 외래키(FK)
