@@ -1,6 +1,6 @@
 # Messenger-Back
 
-## ERD
+## ERD - update 18.09.03
 ![image](https://user-images.githubusercontent.com/26675063/44984534-153d9200-afb8-11e8-94d8-9582e3fc1db0.png)
 
 * * *
