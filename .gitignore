@@ -35,7 +35,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-.idea/
 
 # TypeScript v1 declaration files
 typings/
@@ -72,3 +71,13 @@ typings/
 
 # Serverless directories
 .serverless
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
