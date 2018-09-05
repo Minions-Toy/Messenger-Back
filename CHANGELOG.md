@@ -1,5 +1,10 @@
 # Messenger-Back
 
+## MVC, ORM, TEST - update 18.09.05
+>MVC sample : https://github.com/gnipbao/express-mvc-framework
+>ORM : sequelize(https://github.com/sequelize/sequelize)
+>TEST : mocha(https://mochajs.org/)
+
 ## ERD - update 18.09.03
 ![image](https://user-images.githubusercontent.com/26675063/44985613-e5908900-afbb-11e8-8cd2-c79187116bbc.png)
 
