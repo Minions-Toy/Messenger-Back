@@ -4,6 +4,7 @@
 >MVC sample : https://github.com/gnipbao/express-mvc-framework<br>
 >ORM : sequelize(https://github.com/sequelize/sequelize)<br>
 >TEST : mocha(https://mochajs.org/)<br>
+>DOTENV : https://www.npmjs.com/package/dotenv
 
 ## ERD - update 18.09.03
 ![image](https://user-images.githubusercontent.com/26675063/44985613-e5908900-afbb-11e8-8cd2-c79187116bbc.png)
