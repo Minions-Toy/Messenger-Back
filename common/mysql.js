@@ -1,12 +1,12 @@
 /*Sequelize mysql*/
-var config = require('../config');
+require('dotenv').config();
 var Sequelize = require('sequelize');
 
 var sequelize = new Sequelize(
-    config.mysql.database,
-    config.mysql.username,
-    config.mysql.password, {
-        host: config.mysql.host,
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASS, {
+        host: process.env.DB_HOST,,
         dialect: 'mysql'
     }
 );
