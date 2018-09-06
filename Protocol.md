@@ -1,10 +1,9 @@
 ### Message List
 
 api 설명서
-protocol.md 
-# SSUM PROTOCOL v 1.0
+# Minions-Toy PROTOCOL v 1.0
 ​
-2015-8-13
+2018-09-06
 ​
 ## 1. Protocol Requirement
 ​
