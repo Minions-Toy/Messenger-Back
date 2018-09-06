@@ -6,16 +6,15 @@ api 설명서
 2018-09-06
 ​
 ## 1. Protocol Requirement
-​
 * 통신 프로토콜
 	- Development: http
-	- Production: https
+	- Production: https (보류 - Node)
 * 시간은 모두 EPOCH로 통일한다. 단위는 ms
 	- https://en.wikipedia.org/wiki/Unix_time
 	- UTC 1970년 1월 1일 0시 0분 0초 이후의 elapsed ms
 	- 13자리 숫자 (예: 1439243059000)
 ​
-## 2. REST API
+## 2. REST API 기본
 * 접속 주소는 /api/v1/ 과 같이 /api/version아래에 존재.(추후 API이 전면 개편에 대비)
 	- 즉, 아래 모든 REST API에서 주소는 https://ssum.chat/api/v1/login 과 같은 형태임.
 * 모든 Parameter는 request의 body에 urlencoded의 형태로 전송한다.
@@ -60,8 +59,95 @@ api 설명서
 		- HTTP Parameter나 Body에 **token**
 	- 아래에서 << 인증 필요 없음 >> 으로 표기되지 않은 API는 모두 valid 한 access token 필요
 ​
-### 2-1. Authorization <<개발완료>>
+### 2-1. 유저정보
 ​
+- 로그인: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- 422 {code: 106, need email}
+		- 404 {code: 105, not exist user}
+		
+- 회원가입: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+		
+- 로그아웃: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+
+​
+### 2-2. 룸 목록
+​
+- 룸 목록: **GET /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+
+- 룸 생성: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+		
+- 룸 삭제: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+		
+​
+### 2-3. 룸(메세지) 상세정보
+- 룸 상세: **GET /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+		
+- 룸 삭제: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+
+- 룸 삭제: **POST /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}
+		
+- 전 메세지 불러오기: **GET /{}/{}**
+	+ Parameter
+		* {} : {}
+	+ <<인증 필요없음>>
+	* Response
+		- {} {code: {}, {}}
+		- {} {code: {}, {}}		
+​		
+
+------
 - 비밀번호 변경 요청: **POST /auth/forgot_password**
 	+ Parameter
 		* email: 이메일주소
@@ -446,3 +532,12 @@ Collapse
 Message Input
 
 Message #minions-messenger
+
+
+
+
+
+
+
+
+
