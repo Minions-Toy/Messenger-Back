@@ -1,5 +1,10 @@
 # Messenger-Back
 
+## MVC, ORM, TEST - update 18.09.11
+>DB데이터추출을 위한 인덱싱 처리
+>PK, FK는 자동으로 index 속성 설정
+>검색을 위한 PK 타입 INT형으로 변환, 생성자동을 위한 autoincrement
+
 ## MVC, ORM, TEST - update 18.09.05
 >MVC sample : https://github.com/gnipbao/express-mvc-framework<br>
 >ORM : sequelize(https://github.com/sequelize/sequelize)<br>
