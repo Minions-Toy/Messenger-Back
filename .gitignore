@@ -81,3 +81,6 @@ typings/
 .idea/dictionaries
 .idea/libraries
 .idea/caches
+
+# For Mac
+.DS_Store
